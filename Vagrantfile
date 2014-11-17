@@ -4,6 +4,7 @@ Vagrant.configure("2") do |config|
 
   ## For masterless, mount your file roots file root
   config.vm.synced_folder "salt/", "/etc/salt/"
+  config.vm.synced_folder "reclass/", "/etc/reclass/"
 
   ## Set your salt configs here
   config.vm.provision :salt do |salt|
